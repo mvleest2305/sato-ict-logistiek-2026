@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>SATO | ICT & Logistiek 2026</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -18,9 +15,8 @@
       color: #222;
     }
 
-    /* SATO LOGO */
     .logo-header {
-      background: #ffffff;
+      background: #fff;
       text-align: center;
       padding: 22px 20px 18px;
     }
@@ -33,7 +29,6 @@
       margin: 0 auto;
     }
 
-    /* BLUE HEADER */
     .header {
       background: #007AC9;
       color: white;
@@ -49,7 +44,6 @@
     .header p {
       margin: 7px 0 0;
       font-size: 16px;
-      opacity: 0.95;
     }
 
     .container {
@@ -58,31 +52,23 @@
       padding: 0 16px 40px;
     }
 
-    /* STAND */
     .stand {
       background: white;
       border-left: 5px solid #007AC9;
       padding: 15px 18px;
       margin-bottom: 20px;
       border-radius: 7px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
     }
 
-    .stand strong {
-      color: #007AC9;
-    }
+    .stand strong { color: #007AC9; }
 
-    /* INTRO */
     .intro {
       margin-bottom: 18px;
       line-height: 1.5;
     }
 
-    .intro strong {
-      font-size: 18px;
-    }
+    .intro strong { font-size: 18px; }
 
-    /* POST SELECTOR */
     .post-tabs {
       display: flex;
       gap: 8px;
@@ -99,11 +85,6 @@
       font-size: 15px;
       font-weight: bold;
       cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .post-tab:hover {
-      background: #eaf5fb;
     }
 
     .post-tab.active {
@@ -111,7 +92,6 @@
       color: white;
     }
 
-    /* TOPIC */
     .topic {
       background: #eaf5fb;
       color: #007AC9;
@@ -122,7 +102,6 @@
       font-weight: bold;
     }
 
-    /* LINKEDIN POST */
     .post {
       background: white;
       border: 1px solid #dfe3e8;
@@ -133,14 +112,46 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
-    /* BUTTONS */
+    /* VISUAL */
+    .visual-section {
+      margin-top: 22px;
+    }
+
+    .visual-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .visual {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      border: 1px solid #dfe3e8;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .visual-button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      background: white;
+      color: #007AC9;
+      border: 2px solid #007AC9;
+      border-radius: 7px;
+      padding: 13px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     .buttons {
       display: flex;
       gap: 10px;
-      margin-top: 16px;
+      margin-top: 18px;
     }
 
-    button,
+    .copy,
     .linkedin {
       flex: 1;
       border-radius: 7px;
@@ -158,21 +169,12 @@
       color: white;
     }
 
-    .copy:hover {
-      background: #0067aa;
-    }
-
     .linkedin {
       background: white;
       color: #007AC9;
       border: 2px solid #007AC9;
     }
 
-    .linkedin:hover {
-      background: #eaf5fb;
-    }
-
-    /* SUCCESS */
     .success {
       display: none;
       margin-top: 12px;
@@ -183,7 +185,6 @@
       font-weight: bold;
     }
 
-    /* TAG TIP */
     .tip {
       margin-top: 20px;
       background: #eaf5fb;
@@ -193,7 +194,6 @@
       line-height: 1.5;
     }
 
-    /* FOOTER */
     .footer {
       text-align: center;
       margin-top: 30px;
@@ -201,20 +201,11 @@
       color: #777;
     }
 
-    /* MOBILE */
     @media (max-width: 550px) {
+      .logo-header img { width: 200px; }
+      .header h1 { font-size: 22px; }
 
-      .logo-header img {
-        width: 200px;
-      }
-
-      .header h1 {
-        font-size: 22px;
-      }
-
-      .post-tabs {
-        gap: 5px;
-      }
+      .post-tabs { gap: 5px; }
 
       .post-tab {
         font-size: 13px;
@@ -225,23 +216,17 @@
         flex-direction: column;
       }
 
-      .post {
-        padding: 17px;
-      }
+      .post { padding: 17px; }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- SATO LOGO -->
   <div class="logo-header">
-    <img
-      src="SATO POS logo (1).png"
-      alt="SATO - Powered On Site">
+    <img src="SATO POS logo (1).png" alt="SATO - Powered On Site">
   </div>
 
-  <!-- HEADER -->
   <div class="header">
     <h1>ICT &amp; Logistiek 2026</h1>
     <p>Share on LinkedIn</p>
@@ -249,53 +234,48 @@
 
   <div class="container">
 
-    <!-- STAND -->
     <div class="stand">
       📍 ICT &amp; Logistiek 2026<br>
       <strong>SATO – stand 08.C024</strong>
     </div>
 
-    <!-- INTRO -->
     <div class="intro">
       <strong>Kies een bericht om te delen</strong><br>
-      Kies één van de onderstaande posts, kopieer de tekst en deel hem met je LinkedIn-netwerk.
+      Kies een post, kopieer de tekst en gebruik de bijbehorende visual voor je LinkedIn-bericht.
     </div>
 
-    <!-- POST BUTTONS -->
     <div class="post-tabs">
-
-      <button
-        id="tab1"
-        class="post-tab active"
-        onclick="selectPost(1)">
-        POST 1
-      </button>
-
-      <button
-        id="tab2"
-        class="post-tab"
-        onclick="selectPost(2)">
-        POST 2
-      </button>
-
-      <button
-        id="tab3"
-        class="post-tab"
-        onclick="selectPost(3)">
-        POST 3
-      </button>
-
+      <button id="tab1" class="post-tab active" onclick="selectPost(1)">POST 1</button>
+      <button id="tab2" class="post-tab" onclick="selectPost(2)">POST 2</button>
+      <button id="tab3" class="post-tab" onclick="selectPost(3)">POST 3</button>
     </div>
 
-    <!-- TOPIC -->
-    <div id="topic" class="topic">
-      🚀 Technologie &amp; RFID
-    </div>
+    <div id="topic" class="topic"></div>
 
-    <!-- LINKEDIN POST -->
     <div id="linkedinPost" class="post"></div>
 
-    <!-- BUTTONS -->
+    <!-- VISUAL -->
+    <div class="visual-section">
+      <div class="visual-title">
+        🖼️ Bijbehorende visual
+      </div>
+
+      <img
+        id="postVisual"
+        class="visual"
+        src="post1.png"
+        alt="LinkedIn visual">
+
+      <a
+        id="visualLink"
+        class="visual-button"
+        href="post1.png"
+        target="_blank">
+        🖼️ Open visual
+      </a>
+    </div>
+
+    <!-- ACTIONS -->
     <div class="buttons">
 
       <button class="copy" onclick="copyPost()">
@@ -312,33 +292,25 @@
 
     </div>
 
-    <!-- SUCCESS -->
     <div id="success" class="success">
       ✓ Bericht gekopieerd! Open LinkedIn en plak het in een nieuwe post.
     </div>
 
-    <!-- TAG TIP -->
     <div id="tagTip" class="tip"></div>
 
-    <!-- FOOTER -->
     <div class="footer">
       SATO Europe • ICT &amp; Logistiek 2026
     </div>
 
   </div>
 
-
   <script>
 
     const posts = {
 
-      /* ============================
-         POST 1
-         TECHNOLOGIE & RFID
-      ============================ */
-
       1: {
         topic: "🚀 Technologie & RFID",
+        image: "post1.png",
 
         text: `🚀 Er is volop innovatie te ontdekken op ICT & Logistiek!
 
@@ -358,14 +330,9 @@ De wereld van barcodes en identificatie verandert snel. Met GS1 Sunrise 2027 kom
         Na het plakken in LinkedIn klik je op <strong>@CipherLab</strong> en selecteer je de officiële CipherLab-bedrijfspagina.`
       },
 
-
-      /* ============================
-         POST 2
-         LABELS & DUURZAAMHEID
-      ============================ */
-
       2: {
         topic: "🌱 Slimmer & duurzamer labelen",
+        image: "post2.png",
 
         text: `🌱 Vandaag zetten we op ICT & Logistiek het label in de spotlight.
 
@@ -387,14 +354,9 @@ Met ontwikkelingen als PPWR en EUDR wordt het bovendien steeds belangrijker om k
         Na het plakken in LinkedIn klik je op <strong>@IMA Labeling</strong> en selecteer je de officiële bedrijfspagina.`
       },
 
-
-      /* ============================
-         POST 3
-         DIGITAL PRODUCT PASSPORT
-      ============================ */
-
       3: {
         topic: "🔄 Digital Product Passport",
+        image: "post3.png",
 
         text: `🔄 Hoe geef je een fysiek product een digitale identiteit?
 
@@ -411,37 +373,35 @@ Maar hoe verbind je die digitale informatie met het fysieke product?
 #ICTLogistiek #SATOEurope #DigitalProductPassport #DPP #2DBarcode #RFID`,
 
         tip: `💡 <strong>Klaar om te delen?</strong><br>
-        Kopieer het bericht, open LinkedIn en plak het in een nieuwe post.`
+        Kopieer het bericht, open de visual en plaats beide samen in je LinkedIn-post.`
       }
 
     };
 
 
-    /* SELECT POST */
     function selectPost(number) {
 
-      document.getElementById("linkedinPost").innerText =
-        posts[number].text;
+      const post = posts[number];
 
-      document.getElementById("topic").innerText =
-        posts[number].topic;
+      document.getElementById("linkedinPost").innerText = post.text;
+      document.getElementById("topic").innerText = post.topic;
+      document.getElementById("tagTip").innerHTML = post.tip;
 
-      document.getElementById("tagTip").innerHTML =
-        posts[number].tip;
+      /* CHANGE VISUAL */
+      document.getElementById("postVisual").src = post.image;
+      document.getElementById("postVisual").alt = post.topic;
+      document.getElementById("visualLink").href = post.image;
 
       document.querySelectorAll(".post-tab").forEach(tab => {
         tab.classList.remove("active");
       });
 
-      document.getElementById("tab" + number)
-        .classList.add("active");
+      document.getElementById("tab" + number).classList.add("active");
 
-      document.getElementById("success")
-        .style.display = "none";
+      document.getElementById("success").style.display = "none";
     }
 
 
-    /* COPY POST */
     function copyPost() {
 
       const text =
@@ -462,7 +422,7 @@ Maar hoe verbind je die digitale informatie met het fysieke product?
     }
 
 
-    /* DEFAULT = POST 1 */
+    /* DEFAULT */
     selectPost(1);
 
   </script>
