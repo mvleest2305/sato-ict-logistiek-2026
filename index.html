@@ -18,53 +18,111 @@
       color: #222;
     }
 
+    /* SATO LOGO */
+    .logo-header {
+      background: #ffffff;
+      text-align: center;
+      padding: 22px 20px 18px;
+    }
+
+    .logo-header img {
+      width: 230px;
+      max-width: 70%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* BLUE HEADER */
     .header {
       background: #007AC9;
       color: white;
-      padding: 28px 20px;
+      padding: 22px 20px;
       text-align: center;
-    }
-
-    .brand {
-      font-size: 32px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
     }
 
     .header h1 {
       margin: 0;
-      font-size: 24px;
+      font-size: 26px;
     }
 
     .header p {
-      margin: 8px 0 0;
+      margin: 7px 0 0;
+      font-size: 16px;
       opacity: 0.95;
     }
 
     .container {
       max-width: 720px;
-      margin: 25px auto;
+      margin: 24px auto;
       padding: 0 16px 40px;
     }
 
+    /* STAND */
     .stand {
       background: white;
       border-left: 5px solid #007AC9;
       padding: 15px 18px;
       margin-bottom: 20px;
-      border-radius: 6px;
+      border-radius: 7px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
     }
 
     .stand strong {
       color: #007AC9;
     }
 
+    /* INTRO */
     .intro {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       line-height: 1.5;
     }
 
+    .intro strong {
+      font-size: 18px;
+    }
+
+    /* POST SELECTOR */
+    .post-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .post-tab {
+      flex: 1;
+      background: white;
+      color: #007AC9;
+      border: 2px solid #007AC9;
+      border-radius: 7px;
+      padding: 12px 8px;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .post-tab:hover {
+      background: #eaf5fb;
+    }
+
+    .post-tab.active {
+      background: #007AC9;
+      color: white;
+    }
+
+    /* TOPIC */
+    .topic {
+      background: #eaf5fb;
+      color: #007AC9;
+      padding: 11px 14px;
+      border-radius: 7px;
+      margin-bottom: 12px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    /* LINKEDIN POST */
     .post {
       background: white;
       border: 1px solid #dfe3e8;
@@ -75,6 +133,7 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
+    /* BUTTONS */
     .buttons {
       display: flex;
       gap: 10px;
@@ -84,7 +143,6 @@
     button,
     .linkedin {
       flex: 1;
-      border: none;
       border-radius: 7px;
       padding: 14px 16px;
       font-size: 16px;
@@ -95,6 +153,7 @@
     }
 
     .copy {
+      border: none;
       background: #007AC9;
       color: white;
     }
@@ -109,6 +168,22 @@
       border: 2px solid #007AC9;
     }
 
+    .linkedin:hover {
+      background: #eaf5fb;
+    }
+
+    /* SUCCESS */
+    .success {
+      display: none;
+      margin-top: 12px;
+      padding: 11px 14px;
+      background: #eaf5fb;
+      border-radius: 6px;
+      color: #007AC9;
+      font-weight: bold;
+    }
+
+    /* TAG TIP */
     .tip {
       margin-top: 20px;
       background: #eaf5fb;
@@ -118,20 +193,40 @@
       line-height: 1.5;
     }
 
-    .success {
-      display: none;
-      margin-top: 10px;
-      color: #007AC9;
-      font-weight: bold;
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 12px;
+      color: #777;
     }
 
+    /* MOBILE */
     @media (max-width: 550px) {
+
+      .logo-header img {
+        width: 200px;
+      }
+
+      .header h1 {
+        font-size: 22px;
+      }
+
+      .post-tabs {
+        gap: 5px;
+      }
+
+      .post-tab {
+        font-size: 13px;
+        padding: 11px 4px;
+      }
+
       .buttons {
         flex-direction: column;
       }
 
-      .header h1 {
-        font-size: 21px;
+      .post {
+        padding: 17px;
       }
     }
   </style>
@@ -139,42 +234,68 @@
 
 <body>
 
+  <!-- SATO LOGO -->
+  <div class="logo-header">
+    <img
+      src="SATO POS logo (1).png"
+      alt="SATO - Powered On Site">
+  </div>
+
+  <!-- HEADER -->
   <div class="header">
-    <div class="brand">SATO</div>
-    <h1>ICT & Logistiek 2026</h1>
-    <p>LinkedIn post – Dag 1</p>
+    <h1>ICT &amp; Logistiek 2026</h1>
+    <p>Share on LinkedIn</p>
   </div>
 
   <div class="container">
 
+    <!-- STAND -->
     <div class="stand">
-      📍 Vandaag op ICT & Logistiek<br>
+      📍 ICT &amp; Logistiek 2026<br>
       <strong>SATO – stand 08.C024</strong>
     </div>
 
+    <!-- INTRO -->
     <div class="intro">
-      <strong>Help ons SATO zichtbaar te maken op LinkedIn!</strong><br>
-      Kopieer onderstaande tekst, plak hem in LinkedIn en deel hem met je netwerk.
+      <strong>Kies een bericht om te delen</strong><br>
+      Kies één van de onderstaande posts, kopieer de tekst en deel hem met je LinkedIn-netwerk.
     </div>
 
-    <div id="linkedinPost" class="post">🚀 We zijn begonnen! Dag 1 van ICT & Logistiek.
+    <!-- POST BUTTONS -->
+    <div class="post-tabs">
 
-Vandaag draait het bij SATO om zien, ontdekken én vooral zelf ervaren.
+      <button
+        id="tab1"
+        class="post-tab active"
+        onclick="selectPost(1)">
+        POST 1
+      </button>
 
-📱 De bekende barcode is volop in ontwikkeling. Met GS1 Sunrise 2027 komt de transitie naar 2D-barcodes steeds dichterbij. Wat betekent dat voor jouw organisatie en welke nieuwe mogelijkheden biedt 2D? Onze experts praten je graag bij.
+      <button
+        id="tab2"
+        class="post-tab"
+        onclick="selectPost(2)">
+        POST 2
+      </button>
 
-📦 En wil je ervaren wat RFID kan betekenen voor voorraadbeheer? Doe dan onze RFID Inventory Challenge en ontdek zelf hoe snel je met RFID een complete voorraad kunt inventariseren.
+      <button
+        id="tab3"
+        class="post-tab"
+        onclick="selectPost(3)">
+        POST 3
+      </button>
 
-Samen met @CipherLab laten we daarnaast de nieuwste ontwikkelingen zien op het gebied van mobile computers, barcode scanners en RFID readers.
+    </div>
 
-🍣 Genoeg technologie gezien? Dan staat onze Sushi Chef Cindy klaar voor een verse sushi snack. Of schuif gezellig aan bij de bar voor een drankje.
+    <!-- TOPIC -->
+    <div id="topic" class="topic">
+      🚀 Technologie &amp; RFID
+    </div>
 
-Ben jij vandaag op ICT & Logistiek? Kom langs bij de SATO-stand 08.C024, probeer de RFID Inventory Challenge en praat met onze experts.
+    <!-- LINKEDIN POST -->
+    <div id="linkedinPost" class="post"></div>
 
-Tot zo! 👋
-
-#ICTLogistiek #SATO #RFID #2DBarcode #GS1 #Sunrise2027</div>
-
+    <!-- BUTTONS -->
     <div class="buttons">
 
       <button class="copy" onclick="copyPost()">
@@ -191,31 +312,159 @@ Tot zo! 👋
 
     </div>
 
+    <!-- SUCCESS -->
     <div id="success" class="success">
       ✓ Bericht gekopieerd! Open LinkedIn en plak het in een nieuwe post.
     </div>
 
-    <div class="tip">
-      💡 <strong>Let op bij @CipherLab:</strong><br>
-      Na het plakken in LinkedIn klik je op <strong>@CipherLab</strong> en selecteer je de officiële CipherLab-bedrijfspagina. Zo wordt het een echte LinkedIn-tag.
+    <!-- TAG TIP -->
+    <div id="tagTip" class="tip"></div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      SATO Europe • ICT &amp; Logistiek 2026
     </div>
 
   </div>
 
+
   <script>
+
+    const posts = {
+
+      /* ============================
+         POST 1
+         TECHNOLOGIE & RFID
+      ============================ */
+
+      1: {
+        topic: "🚀 Technologie & RFID",
+
+        text: `🚀 Er is volop innovatie te ontdekken op ICT & Logistiek!
+
+De wereld van barcodes en identificatie verandert snel. Met GS1 Sunrise 2027 komt de transitie naar 2D-barcodes steeds dichterbij. Wat betekent dat voor jouw organisatie en welke nieuwe mogelijkheden biedt 2D?
+
+📱 Samen met @CipherLab laten we de nieuwste ontwikkelingen zien op het gebied van mobile computers, barcode scanners en RFID readers.
+
+📦 En wil je de kracht van RFID zelf ervaren? Doe onze RFID Inventory Challenge en ontdek hoe snel je met RFID een complete voorraad kunt inventariseren.
+
+🍣 Daarna tijd voor een verse sushi van Sushi Chef Cindy of een drankje aan onze bar!
+
+📍 SATO – stand 08.C024
+
+#ICTLogistiek #SATOEurope #RFID #2DBarcode #GS1 #Sunrise2027`,
+
+        tip: `💡 <strong>Tag CipherLab:</strong><br>
+        Na het plakken in LinkedIn klik je op <strong>@CipherLab</strong> en selecteer je de officiële CipherLab-bedrijfspagina.`
+      },
+
+
+      /* ============================
+         POST 2
+         LABELS & DUURZAAMHEID
+      ============================ */
+
+      2: {
+        topic: "🌱 Slimmer & duurzamer labelen",
+
+        text: `🌱 Vandaag zetten we op ICT & Logistiek het label in de spotlight.
+
+Kan jouw labelpakket duurzamer, slimmer of kostenefficiënter? Of heb je een uitdagende labelapplicatie waarvoor je nog niet de juiste oplossing hebt gevonden?
+
+Met ontwikkelingen als PPWR en EUDR wordt het bovendien steeds belangrijker om kritisch te kijken naar materialen, verpakkingen en duurzaamheid.
+
+🏷️ Onze Consumables experts denken graag met je mee. Kom langs, bespreek je toepassing en neem meteen een van onze label sample packs mee.
+
+♻️ Ook interessant: samen met @IMA Labeling demonstreren we hoe linerless labels automatisch worden geprint én aangebracht.
+
+🍣 En Sushi Chef Cindy? Die staat natuurlijk klaar met verse sushi!
+
+📍 SATO – stand 08.C024
+
+#ICTLogistiek #SATOEurope #Labels #Linerless #PPWR #EUDR`,
+
+        tip: `💡 <strong>Tag IMA Labeling:</strong><br>
+        Na het plakken in LinkedIn klik je op <strong>@IMA Labeling</strong> en selecteer je de officiële bedrijfspagina.`
+      },
+
+
+      /* ============================
+         POST 3
+         DIGITAL PRODUCT PASSPORT
+      ============================ */
+
+      3: {
+        topic: "🔄 Digital Product Passport",
+
+        text: `🔄 Hoe geef je een fysiek product een digitale identiteit?
+
+Waar bestaat een product uit? Waar komt het vandaan? Hoe kan het worden gerepareerd of gerecycled? Steeds meer van deze informatie moet straks digitaal beschikbaar zijn via het Digital Product Passport (DPP).
+
+Maar hoe verbind je die digitale informatie met het fysieke product?
+
+🔗 Onze experts laten op ICT & Logistiek zien welke rol 2D-barcodes, QR-codes, RFID en slimme labeling hierin kunnen spelen en wat SATO kan betekenen bij de voorbereiding op het DPP.
+
+🍣 Nieuwsgierig? Kom langs, praat met onze experts en pak meteen een verse sushi van Sushi Chef Cindy mee!
+
+📍 SATO – stand 08.C024
+
+#ICTLogistiek #SATOEurope #DigitalProductPassport #DPP #2DBarcode #RFID`,
+
+        tip: `💡 <strong>Klaar om te delen?</strong><br>
+        Kopieer het bericht, open LinkedIn en plak het in een nieuwe post.`
+      }
+
+    };
+
+
+    /* SELECT POST */
+    function selectPost(number) {
+
+      document.getElementById("linkedinPost").innerText =
+        posts[number].text;
+
+      document.getElementById("topic").innerText =
+        posts[number].topic;
+
+      document.getElementById("tagTip").innerHTML =
+        posts[number].tip;
+
+      document.querySelectorAll(".post-tab").forEach(tab => {
+        tab.classList.remove("active");
+      });
+
+      document.getElementById("tab" + number)
+        .classList.add("active");
+
+      document.getElementById("success")
+        .style.display = "none";
+    }
+
+
+    /* COPY POST */
     function copyPost() {
+
       const text =
         document.getElementById("linkedinPost").innerText;
 
       navigator.clipboard.writeText(text).then(() => {
-        const message = document.getElementById("success");
+
+        const message =
+          document.getElementById("success");
+
         message.style.display = "block";
 
         setTimeout(() => {
           message.style.display = "none";
         }, 5000);
+
       });
     }
+
+
+    /* DEFAULT = POST 1 */
+    selectPost(1);
+
   </script>
 
 </body>
