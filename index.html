@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SATO | ICT & Logistiek 2026</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    .header {
+      background: #007AC9;
+      color: white;
+      padding: 28px 20px;
+      text-align: center;
+    }
+
+    .brand {
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .header p {
+      margin: 8px 0 0;
+      opacity: 0.95;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 25px auto;
+      padding: 0 16px 40px;
+    }
+
+    .stand {
+      background: white;
+      border-left: 5px solid #007AC9;
+      padding: 15px 18px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+
+    .stand strong {
+      color: #007AC9;
+    }
+
+    .intro {
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .post {
+      background: white;
+      border: 1px solid #dfe3e8;
+      border-radius: 10px;
+      padding: 20px;
+      line-height: 1.55;
+      white-space: pre-wrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    button,
+    .linkedin {
+      flex: 1;
+      border: none;
+      border-radius: 7px;
+      padding: 14px 16px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .copy {
+      background: #007AC9;
+      color: white;
+    }
+
+    .copy:hover {
+      background: #0067aa;
+    }
+
+    .linkedin {
+      background: white;
+      color: #007AC9;
+      border: 2px solid #007AC9;
+    }
+
+    .tip {
+      margin-top: 20px;
+      background: #eaf5fb;
+      padding: 15px;
+      border-radius: 7px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .success {
+      display: none;
+      margin-top: 10px;
+      color: #007AC9;
+      font-weight: bold;
+    }
+
+    @media (max-width: 550px) {
+      .buttons {
+        flex-direction: column;
+      }
+
+      .header h1 {
+        font-size: 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="brand">SATO</div>
+    <h1>ICT & Logistiek 2026</h1>
+    <p>LinkedIn post – Dag 1</p>
+  </div>
+
+  <div class="container">
+
+    <div class="stand">
+      📍 Vandaag op ICT & Logistiek<br>
+      <strong>SATO – stand 08.C024</strong>
+    </div>
+
+    <div class="intro">
+      <strong>Help ons SATO zichtbaar te maken op LinkedIn!</strong><br>
+      Kopieer onderstaande tekst, plak hem in LinkedIn en deel hem met je netwerk.
+    </div>
+
+    <div id="linkedinPost" class="post">🚀 We zijn begonnen! Dag 1 van ICT & Logistiek.
+
+Vandaag draait het bij SATO om zien, ontdekken én vooral zelf ervaren.
+
+📱 De bekende barcode is volop in ontwikkeling. Met GS1 Sunrise 2027 komt de transitie naar 2D-barcodes steeds dichterbij. Wat betekent dat voor jouw organisatie en welke nieuwe mogelijkheden biedt 2D? Onze experts praten je graag bij.
+
+📦 En wil je ervaren wat RFID kan betekenen voor voorraadbeheer? Doe dan onze RFID Inventory Challenge en ontdek zelf hoe snel je met RFID een complete voorraad kunt inventariseren.
+
+Samen met @CipherLab laten we daarnaast de nieuwste ontwikkelingen zien op het gebied van mobile computers, barcode scanners en RFID readers.
+
+🍣 Genoeg technologie gezien? Dan staat onze Sushi Chef Cindy klaar voor een verse sushi snack. Of schuif gezellig aan bij de bar voor een drankje.
+
+Ben jij vandaag op ICT & Logistiek? Kom langs bij de SATO-stand 08.C024, probeer de RFID Inventory Challenge en praat met onze experts.
+
+Tot zo! 👋
+
+#ICTLogistiek #SATO #RFID #2DBarcode #GS1 #Sunrise2027</div>
+
+    <div class="buttons">
+
+      <button class="copy" onclick="copyPost()">
+        📋 Kopieer bericht
+      </button>
+
+      <a
+        class="linkedin"
+        href="https://www.linkedin.com/feed/?shareActive=true"
+        target="_blank"
+        rel="noopener">
+        Open LinkedIn ↗
+      </a>
+
+    </div>
+
+    <div id="success" class="success">
+      ✓ Bericht gekopieerd! Open LinkedIn en plak het in een nieuwe post.
+    </div>
+
+    <div class="tip">
+      💡 <strong>Let op bij @CipherLab:</strong><br>
+      Na het plakken in LinkedIn klik je op <strong>@CipherLab</strong> en selecteer je de officiële CipherLab-bedrijfspagina. Zo wordt het een echte LinkedIn-tag.
+    </div>
+
+  </div>
+
+  <script>
+    function copyPost() {
+      const text =
+        document.getElementById("linkedinPost").innerText;
+
+      navigator.clipboard.writeText(text).then(() => {
+        const message = document.getElementById("success");
+        message.style.display = "block";
+
+        setTimeout(() => {
+          message.style.display = "none";
+        }, 5000);
+      });
+    }
+  </script>
+
+</body>
+</html>
